@@ -7,12 +7,10 @@ const app = express();
 app.use(FizzBuzzMiddleware.logger);
 app.use(FizzBuzzMiddleware.validate);
 
-const port = 8000;
-
 app.use(require("./api"));
 
-app.listen(port, () => {
-  console.log(`FizzBuzz app listening on port ${port}!`);
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
 
 module.exports = app;

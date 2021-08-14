@@ -19,7 +19,7 @@ module.exports = {
     }else{
         res.send({
             type:"success",
-            message:"count should be an number greater than 0 and lesser than or equal to 100. path to get fizzbuzz is api/fizzbuzz?count={number}"
+            message:"count should be an number greater than 0 and lesser than or equal to 100. path to get fizzbuzz is /api/fizzbuzz?count={number}"
         })
     }
   },

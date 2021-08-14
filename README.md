@@ -1,5 +1,11 @@
 # FizzBuzz
 
+## To Build
+
+
+    npm install
+    
+    
 ## To Start
 
 `
@@ -13,7 +19,8 @@
     npm test
 `
 
-## url to test
+## URL to Test
+
 
     /api/fizzbuzz?count={number}
 
